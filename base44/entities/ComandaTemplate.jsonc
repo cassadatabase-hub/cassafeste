@@ -1,0 +1,90 @@
+{
+  "name": "ComandaTemplate",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Nome modello"
+    },
+    "title": {
+      "type": "string",
+      "title": "Intestazione comanda"
+    },
+    "header_text": {
+      "type": "string",
+      "title": "Testo intestazione superiore"
+    },
+    "header_font_size": {
+      "type": "number",
+      "title": "Dim. intestazione (pt)",
+      "default": 20
+    },
+    "header_bold": {
+      "type": "boolean",
+      "title": "Intestazione grassetto",
+      "default": true
+    },
+    "header_align": {
+      "type": "string",
+      "title": "Allineamento intestazione",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "center"
+    },
+    "category_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "ID categorie/reparti inclusi",
+      "default": []
+    },
+    "paper_size": {
+      "type": "string",
+      "title": "Formato carta",
+      "enum": [
+        "58mm",
+        "80mm",
+        "A4"
+      ],
+      "default": "80mm"
+    },
+    "font_family": {
+      "type": "string",
+      "title": "Carattere",
+      "enum": [
+        "monospace",
+        "sans-serif",
+        "serif"
+      ],
+      "default": "monospace"
+    },
+    "font_size": {
+      "type": "number",
+      "title": "Dimensione testo (pt)",
+      "default": 12
+    },
+    "title_font_size": {
+      "type": "number",
+      "title": "Dimensione titolo (pt)",
+      "default": 16
+    },
+    "sort_order": {
+      "type": "number",
+      "title": "Ordine",
+      "default": 0
+    },
+    "active": {
+      "type": "boolean",
+      "title": "Attivo",
+      "default": true
+    }
+  },
+  "required": [
+    "name",
+    "title"
+  ]
+}

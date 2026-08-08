@@ -1,0 +1,59 @@
+{
+  "name": "OrderCode",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "title": "Codice"
+    },
+    "cart_data": {
+      "type": "object",
+      "title": "Dati carrello"
+    },
+    "table_number": {
+      "type": "string",
+      "title": "Numero tavolo"
+    },
+    "customer_name": {
+      "type": "string",
+      "title": "Nome cliente"
+    },
+    "total": {
+      "type": "number",
+      "title": "Totale (\u20ac)"
+    },
+    "status": {
+      "type": "string",
+      "title": "Stato",
+      "enum": [
+        "pending",
+        "consumed",
+        "cancelled"
+      ],
+      "default": "pending"
+    },
+    "expires_at": {
+      "type": "string",
+      "title": "Scadenza"
+    },
+    "purpose": {
+      "type": "string",
+      "title": "Scopo",
+      "enum": [
+        "cassa",
+        "table_share"
+      ],
+      "default": "cassa"
+    },
+    "consumed_at": {
+      "type": "string",
+      "title": "Consumato il"
+    }
+  },
+  "required": [
+    "code",
+    "cart_data",
+    "table_number",
+    "total"
+  ]
+}

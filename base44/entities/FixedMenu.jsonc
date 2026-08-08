@@ -1,0 +1,68 @@
+{
+  "name": "FixedMenu",
+  "type": "object",
+  "properties": {
+    "name_it": {
+      "type": "string",
+      "title": "Nome (IT)"
+    },
+    "name_en": {
+      "type": "string",
+      "title": "Nome (EN)"
+    },
+    "price": {
+      "type": "number",
+      "title": "Prezzo (\u20ac)"
+    },
+    "first_course_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "ID primi selezionabili",
+      "default": []
+    },
+    "second_course_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "ID secondi selezionabili",
+      "default": []
+    },
+    "included_item_names_it": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Inclusi (IT)",
+      "default": []
+    },
+    "included_item_names_en": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Inclusi (EN)",
+      "default": []
+    },
+    "extra_drink_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "ID bevande extra",
+      "default": []
+    },
+    "active": {
+      "type": "boolean",
+      "title": "Attivo",
+      "default": true
+    }
+  },
+  "required": [
+    "name_it",
+    "name_en",
+    "price"
+  ]
+}

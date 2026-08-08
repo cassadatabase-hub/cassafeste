@@ -1,0 +1,71 @@
+{
+  "name": "CashierOrder",
+  "type": "object",
+  "properties": {
+    "order_number": {
+      "type": "number",
+      "title": "Numero progressivo"
+    },
+    "code": {
+      "type": "string",
+      "title": "Codice ordine (se da codice)"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "title": "Articoli",
+      "default": []
+    },
+    "total": {
+      "type": "number",
+      "title": "Totale (\u20ac)"
+    },
+    "table_number": {
+      "type": "string",
+      "title": "Numero tavolo"
+    },
+    "customer_name": {
+      "type": "string",
+      "title": "Nome cliente"
+    },
+    "note": {
+      "type": "string",
+      "title": "Nota"
+    },
+    "mode": {
+      "type": "string",
+      "title": "Modalit\u00e0",
+      "enum": [
+        "code",
+        "manual"
+      ],
+      "default": "manual"
+    },
+    "status": {
+      "type": "string",
+      "title": "Stato",
+      "enum": [
+        "paid",
+        "pending"
+      ],
+      "default": "paid"
+    },
+    "comandas_printed": {
+      "type": "boolean",
+      "title": "Comande stampate",
+      "default": false
+    },
+    "festa_id": {
+      "type": "string",
+      "title": "ID Festa"
+    }
+  },
+  "required": [
+    "items",
+    "total",
+    "table_number",
+    "mode"
+  ]
+}

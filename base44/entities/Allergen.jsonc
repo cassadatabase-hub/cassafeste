@@ -1,0 +1,28 @@
+{
+  "name": "Allergen",
+  "type": "object",
+  "properties": {
+    "name_it": {
+      "type": "string",
+      "title": "Nome (IT)"
+    },
+    "name_en": {
+      "type": "string",
+      "title": "Nome (EN)"
+    },
+    "icon": {
+      "type": "string",
+      "title": "Emoji",
+      "default": "\u26a0\ufe0f"
+    },
+    "sort_order": {
+      "type": "number",
+      "title": "Ordine",
+      "default": 0
+    }
+  },
+  "required": [
+    "name_it",
+    "name_en"
+  ]
+}

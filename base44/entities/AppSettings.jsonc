@@ -1,0 +1,39 @@
+{
+  "name": "AppSettings",
+  "type": "object",
+  "properties": {
+    "cassa_pin": {
+      "type": "string",
+      "title": "PIN cassa",
+      "default": "1234"
+    },
+    "admin_pin": {
+      "type": "string",
+      "title": "PIN admin",
+      "default": "9999"
+    },
+    "code_expiry_hours": {
+      "type": "number",
+      "title": "Scadenza codice (ore)",
+      "default": 4
+    },
+    "next_order_number": {
+      "type": "number",
+      "title": "Prossimo numero ordine",
+      "default": 1
+    },
+    "festa_name": {
+      "type": "string",
+      "title": "Nome festa/evento",
+      "default": ""
+    },
+    "active_festa_id": {
+      "type": "string",
+      "title": "ID Festa attiva",
+      "default": ""
+    }
+  },
+  "required": [
+    "cassa_pin"
+  ]
+}

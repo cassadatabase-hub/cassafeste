@@ -1,0 +1,36 @@
+{
+  "name": "Festa",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Nome festa/evento"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Data inizio"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Data fine"
+    },
+    "status": {
+      "type": "string",
+      "title": "Stato",
+      "enum": [
+        "active",
+        "archived"
+      ],
+      "default": "active"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Note"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

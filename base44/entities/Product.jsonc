@@ -1,0 +1,63 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name_it": {
+      "type": "string",
+      "title": "Nome (IT)"
+    },
+    "name_en": {
+      "type": "string",
+      "title": "Nome (EN)"
+    },
+    "description_it": {
+      "type": "string",
+      "title": "Descrizione (IT)"
+    },
+    "description_en": {
+      "type": "string",
+      "title": "Descrizione (EN)"
+    },
+    "price": {
+      "type": "number",
+      "title": "Prezzo (\u20ac)"
+    },
+    "category_id": {
+      "type": "string",
+      "title": "ID Reparto"
+    },
+    "allergens": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Allergeni",
+      "default": []
+    },
+    "available": {
+      "type": "boolean",
+      "title": "Disponibile",
+      "default": true
+    },
+    "lactose_free_option": {
+      "type": "boolean",
+      "title": "Possibilit\u00e0 senza lattosio",
+      "default": false
+    },
+    "image_url": {
+      "type": "string",
+      "title": "URL Immagine"
+    },
+    "sort_order": {
+      "type": "number",
+      "title": "Ordine",
+      "default": 0
+    }
+  },
+  "required": [
+    "name_it",
+    "name_en",
+    "price",
+    "category_id"
+  ]
+}
